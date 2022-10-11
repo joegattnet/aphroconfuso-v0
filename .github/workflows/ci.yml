@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   update:
@@ -21,7 +21,7 @@ jobs:
         passphrase: ${{ secrets.DEPLOYER_CI_PRIVATE_KEY_PASSWORD }}
         script: |
           cd joegatt.net-server
-          cd joegatt.net-v3-html
+          cd aphroconfuso-v0
           eval "$(ssh-agent -s)"
           ssh-add ~/.ssh/id_rsa_deploykey_unsigned
           git pull
