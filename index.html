@@ -19,28 +19,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@1,500&display=swap" rel="stylesheet">
     <style>
       body { background-color: #f0f0f0; padding: 0; margin: 0 }
-      .main { background-image: url('images/bg-1-purplish.jpg'); border-bottom: 1px solid #360000; height: 50% }
-      .coming { color: #181818; font-family: 'Vollkorn', serif; font-size: 5vw; text-align: right; padding: 10px; }
-      .blink {
-      animation: blinkMe 1.5s cubic-bezier(0.95, 0.05, 0.795, 0.035) infinite;
+      #main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
       }
-      @keyframes blinkMe {
-      0% {
-        opacity: 0;
-      }
-      20% {
-        opacity: 1;
-      }
-      100% {
-        opacity: 0;
-      }
-      }
-  </style>
+      #logo { width: 80%; max-width: 1000px; height: auto;}
+    </style>
   </head>
   <body>
-    <div class="main">&nbsp;</div>
-    <div>
-      <p class="coming">dalwaqt..<span class="blink">.</span></p>
+    <div id="main">
+      <img src="images/logo.svg" id="logo" />
     </div>
   </body>
 </html>
