@@ -1,0 +1,7 @@
+*cratest*
+*sandbox*
+.env
+.xdp*
+/traefik
+acme.json
+letsencrypt
