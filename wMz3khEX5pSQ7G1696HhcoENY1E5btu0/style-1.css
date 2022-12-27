@@ -11,7 +11,7 @@ body {
   font-weight: 400;
   font-family: 'Alegreya Sans', serif;
   line-height: 1.4;
-  color: rgb(43, 41, 40);
+  color: #212121;
   margin-top: 0;
 }
 
@@ -33,15 +33,15 @@ h1 {
   color: hsl(560, 65%, 51%);
   font-family: 'Alegreya', serif;
   /* color: hsl(344, 25%, 51%); */
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
   /* line-height: 1; */
 }
 
 h2 {
-  color: rgb(133, 129, 128);
+  color: hsl(12, 2%, 61%);
   font-family: 'Alegreya', serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 500;
   /* line-height: 1; */
 }
@@ -61,16 +61,12 @@ p {
   white-space: nowrap;
 }
 
-.initial {
-  text-transform: uppercase;
-}
-
 .reviewed {
   color: #999;
   font-family: 'Alegreya Sans', serif;
   padding: 0.5rem 0;
   margin-bottom: 2rem;
-  border: 1px solid #eee;
+  border: 1px solid #ddd;
   border-width: 1px 0;
 }
 
@@ -124,4 +120,22 @@ footer ul li {
   display: inline-block;
   text-align: center;
   font-size: 14px;
+}
+
+.dropcap {
+  /* color:#999; */
+  /* font-family: 'Cinzel Decorative', cursive; */
+  font-weight: 400;
+  color:#313131;
+  float: left;
+  font-size: 7rem;
+  line-height: 0.6;
+  padding-top: 0.1rem;
+  padding-right: 0.2rem;
+  z-index: -1;
+}
+
+.initial {
+  font-weight: 500;
+  text-transform: uppercase;
 }
