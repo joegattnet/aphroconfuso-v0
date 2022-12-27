@@ -88,8 +88,9 @@ main {
 
 footer {
   /* color:#999; */
+  border-top: 1px solid #fff;
   font-size: 1.2rem;
-  background-color: hsl(23, 93%, 6%);
+  background-color: hsl(23, 94%, 6%);
   padding: 1rem;
   display: flex;
   align-content: flex-start;
@@ -98,8 +99,8 @@ footer {
 
 footer img {
   padding: 0;
-  width: 2rem;
-  height: 2rem;
+  width: 5rem;
+  height: 5rem;
   margin-right: 1rem;
 }
 
@@ -110,4 +111,17 @@ footer ul {
 footer ul li {
   color: #ccc;
   margin-bottom: 0.33rem;
+}
+
+.end-dot {
+  font-weight: 700;
+  font-family: 'Cinzel Decorative', cursive;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  color: #eed;
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
 }
