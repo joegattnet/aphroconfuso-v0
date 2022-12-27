@@ -27,7 +27,8 @@ header {
 }
 
 h1 {
-  color: #A16273;
+  color: hsl(560, 65%, 51%);
+  /* color: hsl(344, 25%, 51%); */
   font-size: 3rem;
   font-weight: 700;
   /* line-height: 1; */
