@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: hsl(60, 5%, 92%);
+  background-color: hsl(60, 20%, 97%);
   padding: 1rem;
   print-color-adjust: exact;
   -webkit-print-color-adjust: exact;
@@ -29,14 +29,14 @@ header {
 h1 {
   color: hsl(560, 65%, 51%);
   /* color: hsl(344, 25%, 51%); */
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
   /* line-height: 1; */
 }
 
 h2 {
   color: rgb(133, 129, 128);
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
   /* line-height: 1; */
 }
