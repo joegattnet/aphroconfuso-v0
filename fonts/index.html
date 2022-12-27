@@ -25,7 +25,15 @@
 
       main { display: flex; justify-content: space-around; align-items: stretch; }
       article { max-width: 700px; padding: 20px; }
-      .sample-text { font-size: 14pt; line-height:1.35; }
+      .sample-text {
+        font-size: 14pt; line-height:1.35;
+        -webkit-print-color-adjust: exact;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-weight: 400;
+        line-height: 1.4;
+        color: rgb(53, 51, 50);
+      }
 
       .abhaya:checked ~ .sample-text { font-family: 'Abhaya Libre', serif; }
       .alegreya:checked ~ .sample-text { font-family: 'Alegreya', serif; }
