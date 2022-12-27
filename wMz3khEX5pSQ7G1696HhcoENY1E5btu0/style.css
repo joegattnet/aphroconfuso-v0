@@ -87,7 +87,7 @@ main {
 }
 
 footer {
-  color:#999;
+  /* color:#999; */
   font-size: 1.2rem;
   background-color: hsl(23, 93%, 6%);
   padding: 1rem;
@@ -98,8 +98,8 @@ footer {
 
 footer img {
   padding: 0;
-  width: 5.5rem;
-  height: 5.5rem;
+  width: 2rem;
+  height: 2rem;
   margin-right: 1rem;
 }
 
@@ -108,5 +108,6 @@ footer ul {
 }
 
 footer ul li {
+  color: #ccc;
   margin-bottom: 0.33rem;
 }
