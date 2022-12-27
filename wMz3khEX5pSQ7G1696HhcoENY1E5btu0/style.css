@@ -4,7 +4,6 @@
 
 body {
   background-color: hsl(60, 20%, 97%);
-  padding: 1rem;
   print-color-adjust: exact;
   -webkit-print-color-adjust: exact;
   -webkit-font-smoothing: antialiased;
@@ -19,11 +18,11 @@ body {
 nav {
   border-bottom: 1px solid #ccc;
   padding-bottom: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem 1rem 2rem 1rem;
 }
 
 header {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 h1 {
@@ -57,6 +56,35 @@ p {
 }
 
 .initial {
-  font-family: 'Alegreya Sans SC', serif;
-  text-transform: lowercase;
+  text-transform: uppercase;
+}
+
+.reviewed {
+  color: #999;
+  font-family: 'Alegreya Sans', serif;
+  padding: 0.5rem 0;
+  margin-bottom: 2rem;
+  border: 1px solid #eee;
+  border-width: 1px 0;
+}
+
+.reviewed .title {
+  text-transform: uppercase;
+}
+
+.reviewed p {
+  margin: 0;
+}
+
+main {
+  padding: 1rem;
+}
+
+footer {
+  background-color: #212121;
+  padding: 1rem;
+}
+
+footer img {
+  /* border: 1px solid #f00; */
 }
