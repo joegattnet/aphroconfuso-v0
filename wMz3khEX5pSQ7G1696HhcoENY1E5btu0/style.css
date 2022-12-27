@@ -42,7 +42,7 @@ h2 {
 }
 
 h5 {
-  color: #757575;
+  color: #999;
   font-family: 'Alegreya Sans SC', serif;
   text-transform: lowercase;
 }
@@ -54,4 +54,9 @@ p {
 
 .h {
   white-space: nowrap;
+}
+
+.initial {
+  font-family: 'Alegreya Sans SC', serif;
+  text-transform: lowercase;
 }
