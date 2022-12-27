@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: hsl(60, 3%, 86%);
+  background-color: hsl(60, 5%, 92%);
   padding: 1rem;
   print-color-adjust: exact;
   -webkit-print-color-adjust: exact;
@@ -47,7 +47,7 @@ h5 {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 
