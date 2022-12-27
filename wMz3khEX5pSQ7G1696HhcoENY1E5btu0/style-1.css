@@ -139,3 +139,15 @@ footer ul li {
   /* font-weight: 500; */
   text-transform: uppercase;
 }
+
+.outlined {
+  text-shadow:
+    -1px -1px 0 hsl(60, 20%, 97%),
+     0   -1px 0 hsl(60, 20%, 97%),
+     1px -1px 0 hsl(60, 20%, 97%),
+     1px  0   0 hsl(60, 20%, 97%),
+     1px  1px 0 hsl(60, 20%, 97%),
+     0    1px 0 hsl(60, 20%, 97%),
+    -1px  1px 0 hsl(60, 20%, 97%),
+    -1px  0   0 hsl(60, 20%, 97%);
+}
