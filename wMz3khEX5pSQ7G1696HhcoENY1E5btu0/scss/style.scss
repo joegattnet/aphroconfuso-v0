@@ -97,6 +97,10 @@ main {
   padding: 2rem 1.2rem 0 1.2rem;
 }
 
+#body-text {
+  padding-bottom: 1rem;
+}
+
 // footer {
 //   border-top: 4px solid hsl(200, 78%, 55%);
 // }
@@ -133,7 +137,7 @@ footer {
   border-radius: 50%;
   width: 14px;
   height: 14px;
-  vertical-align: baseline;
+  vertical-align: -1px;
   color: hsl(200, 78%, 55%);
   background-color: hsl(200, 78%, 55%);
   // background-color: hsl(200, 78%, 85%);
@@ -343,6 +347,7 @@ a {
 
 #logotype-container {
   height: 50vw;
+  max-height: 180px;
   padding: 1rem;
   position: relative;
   #logotype {
