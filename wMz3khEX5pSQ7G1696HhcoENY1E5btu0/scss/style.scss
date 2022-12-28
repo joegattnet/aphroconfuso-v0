@@ -24,6 +24,7 @@ body {
 }
 
 article {
+  // Make body-text the exception, a class that can be assigne to promos, etc
   font-family: 'Alegreya', serif;
   border-bottom: 2px solid hsl(200, 78%, 55%);
   a {
