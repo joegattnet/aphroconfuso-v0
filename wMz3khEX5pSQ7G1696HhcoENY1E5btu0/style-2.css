@@ -30,7 +30,7 @@ header {
 }
 
 h1 {
-  color: hsl(560, 65%, 51%);
+  color: hsl(200, 78%, 55%);
   font-family: 'Alegreya', serif;
   /* color: hsl(344, 25%, 51%); */
   font-size: 3rem;
@@ -83,8 +83,8 @@ main {
 }
 
 footer {
-  border-top: 2px solid rgb(224, 133, 72);
-  background-color: hsl(23, 94%, 6%);
+  border-top: 2px solid hsl(200, 78%, 55%);;
+  background-color: #4C4845;
   padding: 1rem;
 }
 
