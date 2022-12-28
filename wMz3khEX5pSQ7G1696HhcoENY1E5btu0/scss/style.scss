@@ -25,7 +25,17 @@ body {
 
 article {
   font-family: 'Alegreya', serif;
-  border-bottom: 2px solid hsl(200, 78%, 55%);;
+  border-bottom: 2px solid hsl(200, 78%, 55%);
+  a {
+    text-decoration: underline;
+  }
+  aside {
+    color: #454037;
+    font-family: 'Alegreya Sans', sans-serif;
+  }
+  .notes {
+    font-style: italic;
+  }
 }
 
 #main-nav {
@@ -329,20 +339,6 @@ footer {
       border: none !important;
     }
   }
-}
-
-.letters {
-  color: #454037;
-  // font-style: italic;
-}
-
-.notes {
-  color: #454037;
-  font-style: italic;
-}
-
-a {
-  text-decoration: underline;
 }
 
 #logotype-container {
