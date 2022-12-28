@@ -5,3 +5,4 @@
 /traefik
 acme.json
 letsencrypt
+node_modules

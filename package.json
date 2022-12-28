@@ -1,0 +1,30 @@
+{
+  "name": "aphroconfuso-v0",
+  "version": "1.0.0",
+  "description": "Aphroconfuso html/css/js theme",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-dev": "sass --watch --update --style=expanded wMz3khEX5pSQ7G1696HhcoENY1E5btu0/assets/scss:assets/css",
+    "sass-prod": "sass --no-source-map --style=compressed wMz3khEX5pSQ7G1696HhcoENY1E5btu0/assets/scss:assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joegattnet/aphroconfuso-v0.git"
+  },
+  "author": "Joe Gatt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joegattnet/aphroconfuso-v0/issues"
+  },
+  "homepage": "https://github.com/joegattnet/aphroconfuso-v0#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-terser": "^1.4.0",
+    "postcss": "^8.1.2"
+  }
+}
