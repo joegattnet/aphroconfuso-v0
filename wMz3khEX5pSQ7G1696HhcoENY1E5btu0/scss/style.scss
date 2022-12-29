@@ -22,7 +22,7 @@ body {
   font-family: 'Alegreya Sans', serif;
   line-height: 1.4;
   color: #212121;
-  margin-top: 8rem;
+  margin-top: 5rem;
 }
 
 article {
@@ -225,25 +225,22 @@ footer {
   height: 18vw;
   border-bottom: 1px solid #d5d5d5;
   padding: 1rem;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  top: -85px;
+  // display: block;
+  // height: 42px;
+  position: fixed;
+  width: 100%;
   ul {
     background-color: $paper;
     padding: 1rem 1rem 0 1rem;
   }
 }
 
-.top-nav {
-    transition: all 1s ease-out;
-    -webkit-transition: all 1s ease-out;
-    -moz-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
-    top: -85px;
-    // display: block;
-    // height: 42px;
-    position: fixed;
-    width: 100%;
-}
-
-.scrolling .top-nav,
+.show-nav .top-nav,
 .mousemoving .top-nav{
   top:0;
   transition:all 0.35s ease-out;

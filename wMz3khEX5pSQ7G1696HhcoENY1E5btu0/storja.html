@@ -39,7 +39,7 @@
     <link rel="stylesheet" href="/dist/style.css">
   </head>
 
-  <body class="xxx">
+  <body class="show-nav">
     <section class="top-nav">
       <div class="logo-container">
         <img src="images/logo-4C4845.svg" id="logo" alt="logo: Aphroconfuso" />
@@ -152,18 +152,22 @@
       </nav>
     </footer>
     <script>
-      // Do not scroll away if open?
-      // on close menu rollup nav
-      const removeClassOnTimeout = () => { }
+      const getScrollPosition = () => window.pageYOffset || document.documentElement.scrollTop;
+      let lastScrollPosition = getScrollPosition();
 
-      const addClassOnScroll = () => {
-        clearTimeout(window.scrolling);
-        document.body.classList.add('scrolling');
-        window.scrolling = setTimeout(function () {return document.body.classList.remove('scrolling')}, 2000);
+      const checkMenuOnScroll = () => {
+        const newScrollPosition = getScrollPosition();
+        if (newScrollPosition === 0 || newScrollPosition < lastScrollPosition) {
+          document.body.classList.add('show-nav');
+        } else {
+          document.querySelector('#menu-toggle').checked = false;
+          document.body.classList.remove('show-nav');
+        }
+        lastScrollPosition = newScrollPosition;
+        return;
       }
-
       window.addEventListener('scroll', (event) => {
-        addClassOnScroll();
+        checkMenuOnScroll();
       });
     </script>
 
