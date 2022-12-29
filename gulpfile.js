@@ -9,7 +9,7 @@ const folder = 'wMz3khEX5pSQ7G1696HhcoENY1E5btu0';
 
 // Sass Task
 function scssTask(){
-  return src(`${folder}/scss/style.scss`, { sourcemaps: true })
+  return src([`${folder}/scss/variables.scss`, `${folder}/scss/style.scss`], { sourcemaps: true })
     .pipe(sass())
     .pipe(postcss([cssnano()]))
     .pipe(dest('dist', { sourcemaps: '.' }));
@@ -17,7 +17,7 @@ function scssTask(){
 
 // JavaScript Task
 function jsTask(){
-  return src('wMz3khEX5pSQ7G1696HhcoENY1E5btu0/js/script.js', { sourcemaps: true })
+  return src(`${folder}/js/script.js`, { sourcemaps: true })
     .pipe(terser())
     .pipe(dest('dist', { sourcemaps: '.' }));
 }
@@ -38,9 +38,9 @@ function browsersyncReload(cb){
 }
 
 // Watch Task
-function watchTask(){
-  watch('wMz3khEX5pSQ7G1696HhcoENY1E5btu0/*.html', browsersyncReload);
-  watch(['wMz3khEX5pSQ7G1696HhcoENY1E5btu0/scss/**/*.scss', 'wMz3khEX5pSQ7G1696HhcoENY1E5btu0/js/**/*.js'], series(scssTask, jsTask, browsersyncReload));
+function watchTask() {
+  watch(`${folder}/*.html`, browsersyncReload);
+  watch([`${folder}/scss/**/*.scss`, `${folder}/js/**/*.js`], series(scssTask, jsTask, browsersyncReload));
 }
 
 // Default Gulp task
