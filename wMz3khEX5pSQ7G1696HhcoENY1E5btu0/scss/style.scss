@@ -1,5 +1,7 @@
 $dark-brown: #18130D;
 
+$paper: hsl(60, 20%, 97%);
+
 ::selection {
   background: hsl(60, 67%, 65%);
 }
@@ -11,7 +13,7 @@ html{
 }
 
 body {
-  background-color: hsl(60, 20%, 97%);
+  background-color: $paper;
   print-color-adjust: exact;
   -webkit-print-color-adjust: exact;
   -webkit-font-smoothing: antialiased;
@@ -20,7 +22,7 @@ body {
   font-family: 'Alegreya Sans', serif;
   line-height: 1.4;
   color: #212121;
-  margin-top: 0;
+  margin-top: 8rem;
 }
 
 article {
@@ -215,6 +217,7 @@ footer {
 /* *********************************************************** */
 
 .top-nav {
+  background-color: $paper;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -223,10 +226,35 @@ footer {
   border-bottom: 1px solid #d5d5d5;
   padding: 1rem;
   ul {
-    background-color: hsl(60, 20%, 97%);
+    background-color: $paper;
     padding: 1rem 1rem 0 1rem;
   }
 }
+
+.top-nav {
+    transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    top: -85px;
+    // display: block;
+    // height: 42px;
+    position: fixed;
+    width: 100%;
+}
+
+.scrolling .top-nav,
+.mousemoving .top-nav{
+  top:0;
+  transition:all 0.35s ease-out;
+  -webkit-transition:all 0.35s ease-out;
+  -moz-transition:all 0.35s ease-out;
+  -o-transition:all 0.35s ease-out
+}
+.top-nav:hover{
+  bottom:0
+}
+
 
 .logo-container {
   padding: 0.33rem;

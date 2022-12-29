@@ -39,7 +39,7 @@
     <link rel="stylesheet" href="/dist/style.css">
   </head>
 
-  <body>
+  <body class="xxx">
     <section class="top-nav">
       <div class="logo-container">
         <img src="images/logo-4C4845.svg" id="logo" alt="logo: Aphroconfuso" />
@@ -129,7 +129,7 @@
           <p>§ Tessie kitbitilha dwar milsa infettata u minfuħa, għarrfitha dwar <span class="h">in-nifs</span> maqtugħ, <span class="h">id-deni,</span> <span class="h">l-indiġestjoni</span> u <span class="h">l-vomtu</span> wara <span class="h">l-ikel.</span> Pinġitilha b’tixbihat <span class="h">l-għeja</span> u <span class="h">d-dgħufija</span> minkejja <span class="h">l-mistrieħ,</span> <span class="h">l-uġigħ</span> f’ġenbha minkejja <span class="h">t-trattament,</span> <span class="h">l-għaraq</span> ma’ ġisimha minkejja <span class="h">l-bard</span> u <span class="h">l-bjuda</span> ta’ wiċċha minkejja <span class="h">x-xemx.</span></p>
         </aside>
         <aside class="letters">
-          <p>Jekk tixtiequ tikkorrespondu magħna dwar din l-istorja, ibagħtulna email fl-indirizz <a href="ittri@aphroconfuso.mt" class="outline">ittri@aphroconfuso.mt</a>. Jekk jogħġobkom inkludu isimkhom u l-indirizz.</p>
+          <p>Jekk tixtiequ tikkorrespondu magħna dwar din l-istorja, ibagħtulna email fl-indirizz <a href="mailto:ittri@aphroconfuso.mt" class="outline">ittri@aphroconfuso.mt</a>. Jekk jogħġobkom inkludu isimkhom u l-indirizz.</p>
         </aside>
       </article>
     </main>
@@ -151,6 +151,22 @@
         </ul>
       </nav>
     </footer>
+    <script>
+      // Do not scroll away if open?
+      // on close menu rollup nav
+      const removeClassOnTimeout = () => { }
+
+      const addClassOnScroll = () => {
+        clearTimeout(window.scrolling);
+        document.body.classList.add('scrolling');
+        window.scrolling = setTimeout(function () {return document.body.classList.remove('scrolling')}, 2000);
+      }
+
+      window.addEventListener('scroll', (event) => {
+        addClassOnScroll();
+      });
+    </script>
+
   </body>
 
 </html>

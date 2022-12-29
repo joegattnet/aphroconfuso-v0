@@ -5,9 +5,11 @@ const cssnano = require('cssnano');
 const terser = require('gulp-terser');
 const browsersync = require('browser-sync').create();
 
+const folder = 'wMz3khEX5pSQ7G1696HhcoENY1E5btu0';
+
 // Sass Task
 function scssTask(){
-  return src('wMz3khEX5pSQ7G1696HhcoENY1E5btu0/scss/style.scss', { sourcemaps: true })
+  return src(`${folder}/scss/style.scss`, { sourcemaps: true })
     .pipe(sass())
     .pipe(postcss([cssnano()]))
     .pipe(dest('dist', { sourcemaps: '.' }));
