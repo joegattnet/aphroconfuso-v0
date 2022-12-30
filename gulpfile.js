@@ -9,7 +9,7 @@ const folder = 'wMz3khEX5pSQ7G1696HhcoENY1E5btu0';
 
 // Sass Task
 function scssTask(){
-  return src([`${folder}/scss/variables.scss`, `${folder}/scss/style.scss`], { sourcemaps: true })
+  return src(`${folder}/scss/style.scss`, { sourcemaps: true })
     .pipe(sass())
     .pipe(postcss([cssnano()]))
     .pipe(dest('dist', { sourcemaps: '.' }));

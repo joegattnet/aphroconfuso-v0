@@ -1,0 +1,97 @@
+@import './variables.scss';
+
+h1 {
+  color: hsl(200, 78%, 55%);
+  font-family: 'Alegreya', serif;
+  /* color: hsl(344, 25%, 51%); */
+  font-size: 3rem;
+  font-weight: 700;
+  /* line-height: 1; */
+}
+
+h2 {
+  color: hsl(12, 2%, 61%);
+  font-family: 'Alegreya', serif;
+  font-size: 2rem;
+  font-weight: 500;
+  /* line-height: 1; */
+}
+
+h5 {
+  color: #999;
+  font-family: 'Alegreya Sans SC', serif;
+  text-transform: lowercase;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.h {
+  white-space: nowrap;
+}
+
+.reviewed {
+  color: #999;
+  font-family: 'Alegreya Sans', serif;
+  padding: 0.5rem 0;
+  margin-bottom: 3rem;
+  border: 1px solid #ddd;
+  border-width: 1px 0;
+}
+
+.reviewed .title {
+  font-family: 'Alegreya Sans SC', serif;
+  // text-transform: uppercase;
+}
+
+.reviewed p {
+  margin: 0;
+}
+
+main {
+  padding: 2rem 1.2rem 0 1.2rem;
+}
+
+#body-text {
+  padding-bottom: 1rem;
+}
+
+// footer {
+//   border-top: 4px solid hsl(200, 78%, 55%);
+// }
+
+.end-dot {
+  font-weight: 700;
+  font-family: 'Cinzel Decorative', cursive;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  vertical-align: -1px;
+  color: hsl(200, 78%, 55%);
+  background-color: hsl(200, 78%, 55%);
+  // background-color: hsl(200, 78%, 85%);
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  margin-left: 0.25rem;
+  // padding-left: -5px;
+}
+
+.initial {
+  /* font-weight: 500; */
+  text-transform: uppercase;
+}
+
+.outlined {
+  text-shadow:
+    -1px -1px 0 hsl(60, 20%, 97%),
+     0   -1px 0 hsl(60, 20%, 97%),
+     1px -1px 0 hsl(60, 20%, 97%),
+     1px  0   0 hsl(60, 20%, 97%),
+     1px  1px 0 hsl(60, 20%, 97%),
+     0    1px 0 hsl(60, 20%, 97%),
+    -1px  1px 0 hsl(60, 20%, 97%),
+    -1px  0   0 hsl(60, 20%, 97%);
+}
