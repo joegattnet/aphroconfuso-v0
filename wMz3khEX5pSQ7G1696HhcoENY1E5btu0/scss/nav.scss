@@ -129,7 +129,7 @@
       a {
         padding: 0.75rem 0;
       }
-      .hide-mobile {
+      &.hide-mobile {
         display: none;
       }
     }
@@ -174,7 +174,7 @@
       &:last-child {
         display: none;
       }
-      .hide-mobile {
+      &.hide-laptop {
         display: none;
       }
     }
