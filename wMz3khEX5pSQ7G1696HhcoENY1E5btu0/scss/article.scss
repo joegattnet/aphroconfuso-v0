@@ -1,30 +1,28 @@
-@import './variables.scss';
-
-
 article {
   // Make body-text the exception, a class that can be assigne to promos, etc
   max-width: 1300px;
   margin: 0 auto;
-  font-family: 'Alegreya', serif;
+  font-family: $serif;
   border-bottom: 5px solid hsl(200, 78%, 55%);
   a {
     text-decoration: underline;
   }
   aside {
-    color: #454037;
-    font-family: 'Alegreya Sans', sans-serif;
-  }
-  .notes {
-    font-style: italic;
+    color: $light-brown;
+    font-family: $sans;
+    .notes {
+      font-style: italic;
+    }
   }
 }
 
 header {
-  max-width: 620px;
+  max-width: $max-content-width;
   margin: 0 auto 2rem auto;
 }
 
 #body-text {
-  max-width: 620px;
   margin: 0 auto 2rem auto;
+  max-width: $max-content-width;
+  padding-bottom: 1rem;
 }

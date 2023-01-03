@@ -1,42 +1,55 @@
-@import './variables.scss';
+@import "./variables.scss";
 
 .dropcap {
-  font-weight: 400;
-  color:#313131;
+  color: $lighter-ink;
   float: left;
   font-size: 7rem;
+  font-weight: 400;
   line-height: 0.6;
-  padding-top: 0.1rem;
-  padding-right: 0.2rem;
-  z-index: -1;
-  position: relative;
   margin-left: -0.25rem;
+  padding-right: 0.2rem;
+  padding-top: 0.1rem;
+  position: relative;
+  z-index: -1;
 }
 
 .dropcap::before {
-  content: 'B';
-  z-index: -1;
-  color:hsl(200, 78%, 55%);
-  opacity: 0.2;
-  font-family: 'Cinzel Decorative', cursive;
+  bottom: -0.9rem;
+  content: "B";
+  font-family: $decorative;
   font-size: 8rem;
   font-weight: 600;
-  position: absolute;
   left: -0.33rem;
-  bottom: -0.9rem;
+  opacity: 0.5;
+  position: absolute;
+  z-index: -1;
 }
 
 @media screen and (min-width: 1200px) {
-// better placing
-.dropcap::before {
-  left: -0.66rem;
-}
+  // better placing
+  .dropcap::before {
+    left: -0.66rem;
+  }
 }
 
-.drop-a::before { content: 'A'; }
-.drop-b::before { content: 'B'; }
-.drop-h::before { content: 'H'; }
-.drop-ħ::before { content: 'H'; }
-.drop-o::before { content: 'O'; }
-.drop-q::before { content: 'Q'; }
-.drop-ż::before { content: 'Z'; }
+.drop-a::before {
+  content: "A";
+}
+.drop-b::before {
+  content: "B";
+}
+.drop-h::before {
+  content: "H";
+}
+.drop-ħ::before {
+  content: "H";
+}
+.drop-o::before {
+  content: "O";
+}
+.drop-q::before {
+  content: "Q";
+}
+.drop-ż::before {
+  content: "Z";
+}

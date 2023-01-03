@@ -1,3 +1,19 @@
-$dark-brown: #18130D;
+$max-content-width: 620px;
+
+$sans: "Fira Sans";
+$serif: "Alegreya";
+$decorative: "Cinzel Decorative";
+
+$dark-brown: hsl(33, 30%, 7%);
+$light-brown: hsl(26, 5%, 28%);
+$lighter-brown: hsl(26, 5%, 48%);
+$faint-brown: hsl(26, 5%, 88%);
+$greyer-brown: hsl(30, 1%, 66%);
 
 $paper: hsl(60, 20%, 97%);
+$ink: hsl(0, 0%, 13%);
+$lighter-ink: hsl(0, 0%, 23%);
+$highlight: hsl(60, 57%, 74%);
+
+$faint-line: $faint-brown;
+$light-text: $light-brown;

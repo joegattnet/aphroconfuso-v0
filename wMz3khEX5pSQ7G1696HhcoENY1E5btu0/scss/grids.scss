@@ -1,5 +1,3 @@
-@import './variables.scss';
-
 // https://grid.layoutit.com/?id=vSg1y9l
 
 // IE 10 and 11 not covered -- check usage
@@ -28,8 +26,13 @@
 // }
 
 @media screen and (min-width: 1200px) {
-  .grid-mid-panel-top { grid-area: unset; }
-  .grid-mid-panel-bottom { grid-area: unset; display: block; }
+  .grid-mid-panel-top {
+    grid-area: unset;
+  }
+  .grid-mid-panel-bottom {
+    grid-area: unset;
+    display: block;
+  }
 
   .container {
     max-width: 1300px;
@@ -44,17 +47,27 @@
       "grid-max-panel-left-bottom grid-max-body grid-max-panel-right-bottom";
   }
 
-  #body-text { grid-area: grid-max-body; }
+  #body-text {
+    grid-area: grid-max-body;
+  }
 
-  .grid-max-panel-left-bottom { grid-area: grid-max-panel-left-bottom; }
-  .grid-max-panel-right-bottom { grid-area: grid-max-panel-right-bottom; }
-  .grid-max-panel-left-top { grid-area: grid-max-panel-left-top; }
-  .grid-max-panel-right-top { grid-area: grid-max-panel-right-top; }
+  .grid-max-panel-left-bottom {
+    grid-area: grid-max-panel-left-bottom;
+  }
+  .grid-max-panel-right-bottom {
+    grid-area: grid-max-panel-right-bottom;
+  }
+  .grid-max-panel-left-top {
+    grid-area: grid-max-panel-left-top;
+  }
+  .grid-max-panel-right-top {
+    grid-area: grid-max-panel-right-top;
+  }
 
   .grid-max-panel-left-bottom,
   .grid-max-panel-right-bottom {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 }

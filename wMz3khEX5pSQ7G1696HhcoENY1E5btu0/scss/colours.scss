@@ -1,1 +1,44 @@
-@import './variables.scss';
+@import "./variables.scss";
+
+@mixin month-color($color) {
+  h1,
+  .end-dot {
+    color: $color;
+  }
+  article {
+    border-bottom-color: $color;
+  }
+}
+
+.mejju-2023 {
+  border-bottom-color: hsl(177, 50%, 45%);
+  h1,
+  .dropcap::before,
+  .end-dot {
+    color: hsl(177, 50%, 45%);
+  }
+  .end-dot {
+    background-color: hsl(177, 50%, 45%);
+  }
+}
+
+.june-2023 h1 {
+  color: hsl(308, 50%, 45%);
+}
+
+.styled-scrollbars {
+  /* Foreground, Background */
+  scrollbar-color: hsl(177, 50%, 45%) #cc0;
+}
+.styled-scrollbars::-webkit-scrollbar {
+  width: 10px; /* Mostly for vertical scrollbars */
+  height: 10px; /* Mostly for horizontal scrollbars */
+}
+.styled-scrollbars::-webkit-scrollbar-thumb {
+  /* Foreground */
+  background: #cc0;
+}
+.styled-scrollbars::-webkit-scrollbar-track {
+  /* Background */
+  background: #cc0;
+}

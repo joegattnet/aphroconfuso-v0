@@ -1,0 +1,26 @@
+::selection {
+  background: $highlight;
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+body {
+  background-color: $paper;
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-family: $sans, sans;
+  line-height: 1.4;
+  color: $greyer-brown;
+  margin-top: 5rem;
+}
+
+body {
+  margin-top: 1rem;
+}
