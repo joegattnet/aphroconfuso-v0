@@ -1,11 +1,14 @@
 ::selection {
   background: $highlight;
+  text-shadow: none;
 }
 
 html {
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
+  overflow-y: scroll;
   text-size-adjust: none;
+  min-height: 101%;
 }
 
 body {
@@ -18,9 +21,33 @@ body {
   font-family: $sans, sans;
   line-height: 1.4;
   color: $greyer-brown;
-  margin-top: 5rem;
+  padding-top: 5rem;
+  min-height: 101%;
 }
 
-body {
-  margin-top: 1rem;
+.container {
+  max-width: $max-content-width;
+  margin: 0 auto;
+}
+
+main {
+  padding: 2rem 1.2rem 0 1.2rem;
+}
+
+@media screen and (min-width: $mobile-breakpoint-plusone) {
+  body {
+    padding-top: 1rem;
+  }
+  main {
+    padding-top: 5rem;
+  }
+}
+
+@media screen and (min-width: $laptop-breakpoint) {
+  body {
+    padding-top: 1rem;
+  }
+  main {
+    padding-top: 7rem;
+  }
 }

@@ -1,15 +1,12 @@
 article {
-  // Make body-text the exception, a class that can be assigne to promos, etc
-  max-width: 1300px;
+  max-width: $max-width;
   margin: 0 auto;
-  font-family: $serif;
   border-bottom: 5px solid hsl(200, 78%, 55%);
   a {
     text-decoration: underline;
   }
   aside {
     color: $light-brown;
-    font-family: $sans;
     .notes {
       font-style: italic;
     }
@@ -25,4 +22,19 @@ header {
   margin: 0 auto 2rem auto;
   max-width: $max-content-width;
   padding-bottom: 1rem;
+}
+
+.details,
+.reviewed {
+  margin-bottom: 2rem;
+  padding: 0.5rem 0;
+}
+
+.reviewed {
+  .title {
+    line-height: 1.1;
+    text-transform: uppercase;
+  }
+  border: 1px solid $faint-line;
+  border-width: 1px 0;
 }

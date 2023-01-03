@@ -10,35 +10,27 @@
   }
 }
 
+$blue: hsl(177, 50%, 45%);
+$magenta: hsl(320, 50%, 45%);
+
 .mejju-2023 {
-  border-bottom-color: hsl(177, 50%, 45%);
+  border-bottom-color: $magenta;
   h1,
   .dropcap::before,
   .end-dot {
-    color: hsl(177, 50%, 45%);
+    color: $magenta;
   }
   .end-dot {
-    background-color: hsl(177, 50%, 45%);
+    background-color: $magenta;
   }
 }
 
-.june-2023 h1 {
-  color: hsl(308, 50%, 45%);
-}
-
-.styled-scrollbars {
-  /* Foreground, Background */
-  scrollbar-color: hsl(177, 50%, 45%) #cc0;
-}
-.styled-scrollbars::-webkit-scrollbar {
-  width: 10px; /* Mostly for vertical scrollbars */
-  height: 10px; /* Mostly for horizontal scrollbars */
-}
-.styled-scrollbars::-webkit-scrollbar-thumb {
-  /* Foreground */
-  background: #cc0;
-}
-.styled-scrollbars::-webkit-scrollbar-track {
-  /* Background */
-  background: #cc0;
-}
+// html {
+//   scrollbar-face-color: #eec800;
+//   scrollbar-shadow-color: #006cb4;
+//   scrollbar-highlight-color: #006cb4;
+//   scrollbar-3dlight-color: #006cb4;
+//   scrollbar-darkshadow-color: #006cb4;
+//   scrollbar-track-color: #006cb4;
+//   scrollbar-arrow-color: #c1c1d1;
+// }

@@ -1,7 +1,7 @@
 h1 {
   font-family: $serif, serif;
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.1;
 }
 
@@ -14,8 +14,9 @@ h2 {
 
 h5 {
   display: inline-block;
+  font-family: $sans-sc, sans-serif;
   line-height: 1.1;
-  text-transform: uppercase;
+  text-transform: lowercase;
   &:hover {
     background-color: hsl(200, 78%, 55%);
     color: $paper;
@@ -26,23 +27,9 @@ h5 {
   white-space: nowrap;
 }
 
-.reviewed {
-  padding: 0.5rem 0;
-  margin-bottom: 3rem;
-  border: 1px solid $faint-line;
-  border-width: 1px 0;
-}
-
-.reviewed .title {
-  text-transform: uppercase;
-}
-
-.reviewed p {
-  margin: 0;
-}
-
-main {
-  padding: 2rem 1.2rem 0 1.2rem;
+.details {
+  color: #757575;
+  font-family: $sans, sans-serif;
 }
 
 .body-text {
@@ -51,6 +38,9 @@ main {
     font-family: $serif, serif;
     font-size: 1.2rem;
     margin-bottom: 1rem;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -58,13 +48,12 @@ main {
   border-radius: 50%;
   display: inline-block;
   font-family: $decorative;
-  font-size: 14px;
+  font-size: 0.8rem;
   font-weight: 700;
-  height: 14px;
+  height: 0.8rem;
   margin-left: 0.25rem;
   text-align: center;
-  vertical-align: -1px;
-  width: 14px;
+  width: 0.8rem;
 }
 
 .initial {
@@ -76,4 +65,14 @@ main {
   text-shadow: -1px -1px 0 $paper, 0 -1px 0 $paper, 1px -1px 0 $paper,
     1px 0 0 $paper, 1px 1px 0 $paper, 0 1px 0 $paper, -1px 1px 0 $paper,
     -1px 0 0 $paper;
+}
+
+@media screen and (min-width: $mobile-breakpoint) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
 }

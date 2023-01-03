@@ -1,7 +1,15 @@
-$max-content-width: 620px;
+$mobile-breakpoint: 750px;
+$mobile-breakpoint-plusone: ($mobile-breakpoint + 1px);
+$laptop-breakpoint: 1200px;
 
-$sans: "Fira Sans";
+$max-content-width: 39rem;
+$max-logo-width: 820px;
+$max-width: 1300px;
+
+$sans: "Alegreya Sans";
+$sans-sc: "Alegreya Sans SC";
 $serif: "Alegreya";
+$serif-sc: "Alegreya SC";
 $decorative: "Cinzel Decorative";
 
 $dark-brown: hsl(33, 30%, 7%);
