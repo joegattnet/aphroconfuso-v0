@@ -154,7 +154,7 @@
 @media screen and (min-width: $mobile-breakpoint-plusone) {
   .top-nav {
     max-width: $max-width;
-    margin: 0 auto;
+    margin: 1rem;
   }
   #menu-toggle,
   .menu-button-container {
@@ -169,7 +169,7 @@
     & > li {
       display: inline;
       font-size: 1.1rem;
-      padding: 0.5rem 1rem;
+      padding: 0.5rem 0;
       &:nth-child(5),
       &:last-child {
         display: none;
@@ -182,12 +182,19 @@
   .logo-container {
     border-bottom: 1px solid $lighter-brown;
     display: flex;
-    margin: 0 auto;
     max-width: $max-width;
     padding: 1rem;
+    width: 100%;
     #logo {
       margin: 0 auto;
       max-width: $max-logo-width;
+      width: 100%;
     }
+  }
+}
+
+@media screen and (min-width: $max-width) {
+  .top-nav {
+    margin: auto;
   }
 }

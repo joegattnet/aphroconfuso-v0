@@ -63,7 +63,7 @@ function browsersyncReload(cb){
 
 // Watch Task
 function watchTask() {
-  watch(`${folder}/*.html`, browsersyncReload);
+  watch(`${folder}/*.template.html`, replaceLinks, browsersyncReload);
   watch([`${folder}/scss/**/*.scss`, `${folder}/js/**/*.js`], series(scssTask, jsTask, replaceLinks, browsersyncReload));
 }
 

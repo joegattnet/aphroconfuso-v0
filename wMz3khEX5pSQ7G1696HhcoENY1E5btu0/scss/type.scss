@@ -33,14 +33,19 @@ h5 {
 }
 
 .body-text {
-  p {
+  p,
+  blockquote {
     color: $ink;
     font-family: $serif, serif;
     font-size: 1.2rem;
     margin-bottom: 1rem;
-    &:last-of-type {
-      margin-bottom: 0;
-    }
+  }
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+  blockquote {
+    font-size: 1.1rem;
+    padding: 0.5rem 2rem;
   }
 }
 

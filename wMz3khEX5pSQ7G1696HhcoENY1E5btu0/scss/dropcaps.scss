@@ -20,7 +20,6 @@
   font-size: 8rem;
   font-weight: 600;
   left: -0.33rem;
-  opacity: 0.5;
   position: absolute;
   z-index: -1;
 }
@@ -28,7 +27,7 @@
 @media screen and (min-width: 1200px) {
   // better placing
   .dropcap::before {
-    left: -0.66rem;
+    left: -1rem;
   }
 }
 
@@ -37,6 +36,11 @@
 }
 .drop-b::before {
   content: "B";
+  left: -0.7rem;
+}
+.drop-c::before {
+  content: "C";
+  left: -0.7rem;
 }
 .drop-h::before {
   content: "H";

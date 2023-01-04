@@ -10,19 +10,39 @@
   }
 }
 
-$blue: hsl(177, 50%, 45%);
-$magenta: hsl(320, 50%, 45%);
+$saturation: 50%;
+$lightness: 45%;
 
-.mejju-2023 {
-  border-bottom-color: $magenta;
-  h1,
-  .dropcap::before,
-  .end-dot {
-    color: $magenta;
+$blue: hsl(177, $saturation, $lightness);
+$magenta: hsl(320, $saturation, $lightness);
+$orange: hsl(27, $saturation, $lightness);
+$green: hsl(98, $saturation, $lightness);
+$reddish-pink: hsl(340, $saturation, $lightness);
+
+// complement($colour)
+
+@mixin monthly-colour($colour) {
+  border-bottom-color: $colour;
+  h1 {
+    color: $colour;
+  }
+  h2 {
+    color: $lighter-brown;
+  }
+  .dropcap {
+    &::before,
+    &::after {
+      color: lighten($colour, 25%);
+    }
   }
   .end-dot {
-    background-color: $magenta;
+    color: $colour;
+    background-color: $colour;
   }
+}
+
+article.mejju-2023 {
+  @include monthly-colour($reddish-pink);
 }
 
 // html {
