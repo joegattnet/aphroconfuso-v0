@@ -1,13 +1,13 @@
 h1 {
   font-family: $serif, serif;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 600;
   line-height: 1.1;
 }
 
 h2 {
   font-family: $serif, serif;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 500;
   line-height: 1.1;
 }
@@ -17,10 +17,6 @@ h5 {
   font-family: $sans-sc, sans-serif;
   line-height: 1.1;
   text-transform: lowercase;
-  &:hover {
-    background-color: hsl(200, 78%, 55%);
-    color: $paper;
-  }
 }
 
 .h {
@@ -33,19 +29,16 @@ h5 {
 }
 
 .body-text {
-  p,
-  blockquote {
-    color: $ink;
-    font-family: $serif, serif;
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-  }
+  color: $ink;
+  font-family: $serif, serif;
+  font-size: 1.2rem;
+  margin-bottom: ($body-margin / 2);
   p:last-of-type {
     margin-bottom: 0;
   }
   blockquote {
     font-size: 1.1rem;
-    padding: 0.5rem 2rem;
+    padding: ($body-margin / 2) 2rem;
   }
 }
 
@@ -72,12 +65,8 @@ h5 {
     -1px 0 0 $paper;
 }
 
-@media screen and (min-width: $mobile-breakpoint) {
-  h1 {
-    font-size: 3rem;
-  }
-
-  h2 {
-    font-size: 3rem;
-  }
+article a {
+  text-decoration-color: $ink;
+  text-decoration-thickness: 0.125rem;
+  text-underline-offset: 1.5px;
 }

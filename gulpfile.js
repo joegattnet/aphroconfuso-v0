@@ -8,6 +8,7 @@ const browsersync = require('browser-sync').create();
 // import del from 'del';
 const rename = require('gulp-rename');
 const replace = require('gulp-replace');
+var ssi = require('browsersync-ssi');
 
 var timestamp;
 
@@ -42,7 +43,7 @@ function replaceLinks() {
     .pipe(rename(function (path) {
       path.basename = path.basename.replace('.template', '');
     }))
-    .pipe(replace(/(style-)<!TEMPLATE!>(.css)/g, `$1${timestamp}$2`))
+    .pipe(replace(/<!TEMPLATE!>(.css)/g, `${timestamp}$1`))
     .pipe(dest(folder))
 }
 
@@ -50,7 +51,13 @@ function replaceLinks() {
 function browsersyncServe(cb){
   browsersync.init({
     server: {
-      baseDir: '.'
+      baseDir: '.',
+      middleware: [
+        ssi({
+          baseDir: `/${folder}`,
+          ext: ".html"
+        })
+      ]
     }
   });
   cb();

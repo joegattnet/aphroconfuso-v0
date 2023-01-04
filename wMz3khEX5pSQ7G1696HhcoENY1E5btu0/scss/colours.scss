@@ -10,17 +10,6 @@
   }
 }
 
-$saturation: 50%;
-$lightness: 45%;
-
-$blue: hsl(177, $saturation, $lightness);
-$magenta: hsl(320, $saturation, $lightness);
-$orange: hsl(27, $saturation, $lightness);
-$green: hsl(98, $saturation, $lightness);
-$reddish-pink: hsl(340, $saturation, $lightness);
-
-// complement($colour)
-
 @mixin monthly-colour($colour) {
   border-bottom-color: $colour;
   h1 {
@@ -41,8 +30,16 @@ $reddish-pink: hsl(340, $saturation, $lightness);
   }
 }
 
-article.mejju-2023 {
-  @include monthly-colour($reddish-pink);
+.mejju-2023 {
+  @include monthly-colour($green);
+}
+
+.ġunju-2023 {
+  @include monthly-colour($pink);
+}
+
+.lulju-2023 {
+  @include monthly-colour($purple);
 }
 
 // html {

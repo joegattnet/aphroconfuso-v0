@@ -1,0 +1,13 @@
+.generic {
+  font-size: 1.2rem;
+  .promo-list {
+    margin-top: $body-margin;
+    .promo {
+      header {
+        margin: 0;
+      }
+      display: block;
+      margin-bottom: $body-margin;
+    }
+  }
+}

@@ -1,39 +1,64 @@
 article {
   max-width: $max-width;
   margin: 0 auto;
-  border-bottom: 5px solid hsl(200, 78%, 55%);
-  a {
-    text-decoration: underline;
-  }
+  border-bottom: 5px solid $paper;
   aside {
-    color: $light-brown;
-    .notes {
-      font-style: italic;
-    }
+    font-size: 1.2rem;
   }
 }
 
 header {
   max-width: $max-content-width;
-  margin: 0 auto 2rem auto;
+  margin: $body-margin auto;
 }
 
 #body-text {
-  margin: 0 auto 1rem auto;
+  margin: 0 auto $body-margin auto;
   max-width: $max-content-width;
 }
 
 .details,
+.letters,
+.notes,
 .reviewed {
-  margin-bottom: 1rem;
-  padding: 0.5rem 0;
+  margin-bottom: $body-margin;
 }
 
 .reviewed {
-  .title {
-    line-height: 1.1;
-    text-transform: uppercase;
-  }
   border: 1px solid $faint-line;
   border-width: 1px 0;
+  padding: ($body-margin / 2) 0;
+  .title {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .author {
+    white-space: nowrap;
+  }
+  .publisher {
+    white-space: nowrap;
+  }
+  p {
+    margin-bottom: ($body-margin / 2);
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (min-width: $mobile-breakpoint-plusone) {
+  header {
+    max-width: $max-content-width;
+    margin: ($body-margin * 4) auto ($body-margin * 3);
+  }
+  .reviewed {
+    border: none;
+    padding: 0;
+  }
+  article {
+    aside {
+      color: $greyer-brown;
+      font-size: 1rem;
+    }
+  }
 }

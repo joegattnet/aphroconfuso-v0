@@ -23,5 +23,24 @@ $ink: hsl(0, 0%, 13%);
 $lighter-ink: hsl(0, 0%, 23%);
 $highlight: hsl(60, 57%, 74%);
 
+$saturation: 50%;
+$lightness: 45%;
+
 $faint-line: $faint-brown;
 $light-text: $light-brown;
+
+$body-font-size: 1.2rem;
+$body-line-height: 1.4;
+$body-margin: $body-font-size * $body-line-height;
+$header-line-height: 1.1;
+
+$blue: hsl(177, $saturation, $lightness);
+$green: hsl(98, $saturation, $lightness);
+$magenta: hsl(320, $saturation, $lightness);
+$orange: hsl(27, $saturation, $lightness);
+$pink: hsl(310, $saturation, $lightness);
+$purple: hsl(250, $saturation, $lightness);
+$red: hsl(0, 50%, 45%);
+$reddish-pink: hsl(340, $saturation, $lightness);
+
+$test: hsl(0, 50%, 45%);
