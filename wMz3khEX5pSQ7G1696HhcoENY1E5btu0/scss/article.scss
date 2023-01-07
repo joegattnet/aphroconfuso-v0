@@ -7,11 +7,6 @@ article {
   }
 }
 
-header {
-  max-width: $max-content-width;
-  margin: $body-margin auto;
-}
-
 #body-text {
   margin: 0 auto $body-margin auto;
   max-width: $max-content-width;
@@ -27,6 +22,7 @@ header {
 .reviewed {
   border: 1px solid $faint-line;
   border-width: 1px 0;
+  font-size: 1rem;
   padding: ($body-margin / 2) 0;
   .title {
     letter-spacing: 1px;
@@ -39,7 +35,7 @@ header {
     white-space: nowrap;
   }
   p {
-    margin-bottom: ($body-margin / 2);
+    // margin-bottom: ($body-margin / 2);
     &:last-of-type {
       margin-bottom: 0;
     }
@@ -47,10 +43,6 @@ header {
 }
 
 @media screen and (min-width: $mobile-breakpoint-plusone) {
-  header {
-    max-width: $max-content-width;
-    margin: ($body-margin * 4) auto ($body-margin * 3);
-  }
   .reviewed {
     border: none;
     padding: 0;
@@ -58,7 +50,7 @@ header {
   article {
     aside {
       color: $greyer-brown;
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
   }
 }

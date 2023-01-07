@@ -18,6 +18,7 @@ body {
   background-color: $paper;
   color: hsl(0, 0%, 39%);
   font-family: $sans, sans;
+  font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.4;
   min-height: 101%;
@@ -31,4 +32,16 @@ body {
 
 main {
   padding: 0 1.2rem;
+}
+
+header {
+  max-width: $max-content-width;
+  margin: $body-margin auto;
+}
+
+@media screen and (min-width: $mobile-breakpoint-plusone) {
+  header {
+    max-width: $max-content-width;
+    margin: ($body-margin * 4) auto ($body-margin * 3);
+  }
 }

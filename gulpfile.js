@@ -25,9 +25,9 @@ function scssTask() {
   return src(`${folder}/scss/style.scss`, { sourcemaps: true })
     .pipe(sass())
     .pipe(postcss([cssnano()]))
-    .pipe(rename(function (path) {
-            path.basename += `-${timestamp}`;
-        }))
+    // .pipe(rename(function (path) {
+    //         path.basename += `-${timestamp}`;
+    //     }))
     .pipe(dest('dist', { sourcemaps: '.' }));
 }
 
@@ -43,7 +43,7 @@ function replaceLinks() {
     .pipe(rename(function (path) {
       path.basename = path.basename.replace('.template', '');
     }))
-    .pipe(replace(/<!TEMPLATE!>(.css)/g, `${timestamp}$1`))
+    .pipe(replace(/<!TEMPLATE!>/g, `${timestamp}`))
     .pipe(dest(folder))
 }
 

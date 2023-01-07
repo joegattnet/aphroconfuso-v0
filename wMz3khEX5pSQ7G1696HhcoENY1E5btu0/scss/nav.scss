@@ -37,7 +37,7 @@
     -o-transition: all 0.35s ease-out;
   }
 
-  .logo-container {
+  #logo-container {
     padding: 0.33rem;
   }
 
@@ -186,7 +186,7 @@
       }
     }
   }
-  .logo-container {
+  #logo-container {
     border-bottom: 1px solid $lighter-brown;
     display: flex;
     max-width: $max-width;
