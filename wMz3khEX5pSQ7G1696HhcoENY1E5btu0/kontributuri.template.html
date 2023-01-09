@@ -84,7 +84,10 @@
             </section>
           </section>
           <section class="grid-max-panel-right-top">
-            <aside class="details">
+            <aside class="promo-1">
+              <p>Din hija t-tielet storja minn din is-sensiela. <a href="#">L-ewwel parti</a> ssibuha hawn, u <a href="#">t-tieni parti</a> hawn.</p>
+            </aside>
+            <aside class="promo-2">
               <p>Din hija t-tielet storja minn din is-sensiela. <a href="#">L-ewwel parti</a> ssibuha hawn, u <a href="#">t-tieni parti</a> hawn.</p>
             </aside>
           </section>
@@ -195,7 +198,7 @@
 
       const checkMenuOnScroll = () => {
         const newScrollPosition = getScrollPosition();
-        if (newScrollPosition === 0 || newScrollPosition < lastScrollPosition) {
+        if (newScrollPosition < 50 || newScrollPosition < lastScrollPosition) {
           document.body.classList.add('show-nav');
         } else {
           document.querySelector('#menu-toggle').checked = false;

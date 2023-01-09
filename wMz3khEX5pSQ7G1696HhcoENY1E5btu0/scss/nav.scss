@@ -131,6 +131,7 @@
       text-transform: lowercase;
       width: 100%;
       a {
+        display: inline-block;
         padding: 1.5rem 0;
       }
       &.hide-mobile {

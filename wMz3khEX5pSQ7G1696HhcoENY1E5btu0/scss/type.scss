@@ -1,13 +1,13 @@
 h1 {
   font-family: $serif, serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 600;
   line-height: 1.1;
 }
 
 h2 {
   font-family: $serif, serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 500;
   line-height: 1.1;
 }
@@ -32,13 +32,15 @@ h5 {
   color: $ink;
   font-family: $serif, serif;
   font-size: 1.2rem;
-  margin-bottom: ($body-margin / 2);
-  p:last-of-type {
-    margin-bottom: 0;
+  p {
+    margin-bottom: ($body-margin / 2);
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
   blockquote {
     font-size: 1.1rem;
-    padding: ($body-margin / 2) 2rem;
+    padding: ($body-margin / 2) 0 ($body-margin / 2) 2rem;
   }
 }
 
@@ -69,4 +71,11 @@ article a {
   text-decoration-color: $ink;
   text-decoration-thickness: 0.125rem;
   text-underline-offset: 1.5px;
+}
+
+@media screen and (min-width: $laptop-breakpoint) {
+  h1,
+  h2 {
+    font-size: 3rem;
+  }
 }

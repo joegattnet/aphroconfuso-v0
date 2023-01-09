@@ -21,9 +21,8 @@ article {
 
 .reviewed {
   border: 1px solid $faint-line;
-  border-width: 1px 0;
   font-size: 1rem;
-  padding: ($body-margin / 2) 0;
+  padding: ($body-margin / 2);
   .title {
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -43,10 +42,6 @@ article {
 }
 
 @media screen and (min-width: $mobile-breakpoint-plusone) {
-  .reviewed {
-    border: none;
-    padding: 0;
-  }
   article {
     aside {
       color: $greyer-brown;

@@ -1,0 +1,108 @@
+@mixin clamp($lines: 5) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  line-clamp: $lines;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.list {
+  position: relative;
+}
+
+.promo {
+  &:hover {
+    h1:after {
+      color: lighten($reddish-pink, 40%);
+      content: "➛";
+      font-family: "Cinzel Decorative", cursive;
+      font-size: 5rem;
+      font-style: normal;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: -1;
+    }
+    position: relative;
+  }
+}
+
+.home {
+  header {
+    margin: 0;
+  }
+  h1,
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+.promo-1 {
+  &:before,
+  &:after {
+    color: $magenta;
+    font-family: "Cinzel Decorative", cursive;
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 500;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &:before {
+    content: "{";
+    left: 0;
+  }
+  &:after {
+    content: "}";
+    right: 0;
+  }
+  color: $lighter-ink;
+  display: block;
+  font-family: "Alegreya Sans", sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  padding: 0 3rem;
+  position: relative;
+}
+
+.promo-2 {
+  &:before,
+  &:after {
+    color: $light-brown;
+    font-family: "Cinzel Decorative", cursive;
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 500;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &:before {
+    content: "«";
+    left: 0;
+  }
+  &:after {
+    content: "»";
+    right: 0;
+  }
+  display: block;
+  font-style: italic;
+  padding: 0 3rem;
+  position: relative;
+}
+
+@media screen and (min-width: $mobile-breakpoint-plusone) {
+  .promo {
+    p {
+      @include clamp();
+    }
+  }
+  .promo-1,
+  .promo-2 {
+    p {
+      @include clamp(3);
+    }
+  }
+}

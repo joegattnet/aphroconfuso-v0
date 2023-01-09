@@ -203,7 +203,7 @@
 
       const checkMenuOnScroll = () => {
         const newScrollPosition = getScrollPosition();
-        if (newScrollPosition === 0 || newScrollPosition < lastScrollPosition) {
+        if (newScrollPosition < 50 || newScrollPosition < lastScrollPosition) {
           document.body.classList.add('show-nav');
         } else {
           document.querySelector('#menu-toggle').checked = false;

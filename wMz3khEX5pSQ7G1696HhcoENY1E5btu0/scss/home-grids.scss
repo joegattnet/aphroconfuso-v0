@@ -1,0 +1,68 @@
+.promo-area-1,
+.promo-area-2,
+.promo-area-3,
+.promo-area-4,
+.promo-area-5,
+.promo-area-6 {
+  margin-bottom: $body-margin;
+}
+
+@media screen and (min-width: $mobile-breakpoint-plusone) {
+  .home {
+    padding-top: (2 * $body-margin);
+  }
+  .promo-area-1,
+  .promo-area-2,
+  .promo-area-3,
+  .promo-area-4,
+  .promo-area-5,
+  .promo-area-6 {
+    margin-bottom: 0;
+  }
+  .promo-area-1 {
+    grid-area: promo-area-1;
+  }
+  .promo-area-2 {
+    grid-area: promo-area-2;
+  }
+  .promo-area-3 {
+    grid-area: promo-area-3;
+  }
+  .promo-area-4 {
+    grid-area: promo-area-4;
+  }
+  .promo-area-5 {
+    grid-area: promo-area-5;
+  }
+  .promo-area-6 {
+    grid-area: promo-area-6;
+  }
+
+  .container-promo-grid-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 2rem $body-margin;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "promo-area-1 promo-area-1 promo-area-1 promo-area-2 promo-area-2 promo-area-2"
+      "promo-area-1 promo-area-1 promo-area-1 promo-area-3 promo-area-3 promo-area-3"
+      "promo-area-4 promo-area-4 promo-area-5 promo-area-5 promo-area-6 promo-area-6";
+
+    .promo-area-2 {
+      padding-top: 7rem;
+    }
+  }
+
+  .container-promo-grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 2rem $body-margin;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "promo-area-2 promo-area-1 promo-area-1 promo-area-1 promo-area-1 promo-area-3"
+      "promo-area-2 promo-area-1 promo-area-1 promo-area-1 promo-area-1 promo-area-3"
+      "promo-area-4 promo-area-4 promo-area-5 promo-area-5 promo-area-6 promo-area-6";
+  }
+}
