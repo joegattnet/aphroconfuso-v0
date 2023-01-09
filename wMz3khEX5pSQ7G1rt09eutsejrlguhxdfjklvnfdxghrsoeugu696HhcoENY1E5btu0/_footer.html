@@ -1,0 +1,49 @@
+<footer>
+  <div class="footer-content">
+    <nav class="footer-links">
+      <ul>
+        <li>Dwarna</li>
+        <li>Kolofon</li>
+        <li>Gwida tal-istil</li>
+      </ul>
+      <ul>
+        <li>Termini</li>
+        <li>Privatezza</li>
+        <li>Sottomissjonijiet</li>
+      </ul>
+      <ul>
+        <li><a href="">Facebook</a></li>
+        <li><a href="">Instagram</a></li>
+        <li><a href="">Twitter</a></li>
+      </ul>
+    </nav>
+    <form class="newsletter-subscribe">
+      <p>Inkiteb għan-newsletter tagħna:</p>
+      <input type="email" placeholder="email">
+      <input type="submit" value="Ibgħat">
+    </form>
+    <div class="logotype-container">
+      <img src="images/logotype.svg" class="logotype" alt="logo: Aphroconfuso" />
+      <div class="copyright">&copy; 2023 Aphroconfuso</div>
+    </div>
+  </div>
+</footer>
+<script>
+  const getScrollPosition = () => window.pageYOffset || document.documentElement.scrollTop;
+  let lastScrollPosition = getScrollPosition();
+
+  const checkMenuOnScroll = () => {
+    const newScrollPosition = getScrollPosition();
+    if (newScrollPosition < 50 || newScrollPosition < lastScrollPosition) {
+      document.body.classList.add('show-nav');
+    } else {
+      document.querySelector('#menu-toggle').checked = false;
+      document.body.classList.remove('show-nav');
+    }
+    lastScrollPosition = newScrollPosition;
+    return;
+  }
+  window.addEventListener('scroll', (event) => {
+    checkMenuOnScroll();
+  });
+</script>

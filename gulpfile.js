@@ -8,6 +8,8 @@ const browsersync = require('browser-sync').create();
 // import del from 'del';
 const rename = require('gulp-rename');
 const replace = require('gulp-replace');
+const fileinclude = require('gulp-file-include');
+
 var ssi = require('browsersync-ssi');
 
 var build, timestamp;
@@ -21,7 +23,7 @@ function deleteDistFolder() {
 
 // Sass Task
 function scssTask() {
-  build = 2;
+  build = 4;
   timestamp = new Date().getTime();
   return src(`${folder}/scss/style.scss`, { sourcemaps: true })
     .pipe(sass())
@@ -29,14 +31,14 @@ function scssTask() {
     .pipe(rename(function (path) {
             path.basename += `-${build}`;
         }))
-    .pipe(dest('dist', { sourcemaps: '.' }));
+    .pipe(dest(`${folder}/dist`, { sourcemaps: '.' }));
 }
 
 // JavaScript Task
 function jsTask(){
   return src(`${folder}/js/script.js`, { sourcemaps: true })
     .pipe(terser())
-    .pipe(dest('dist', { sourcemaps: '.' }));
+    .pipe(dest(`${folder}/dist`, { sourcemaps: '.' }));
 }
 
 function replaceLinks() {
@@ -44,9 +46,13 @@ function replaceLinks() {
     .pipe(rename(function (path) {
       path.basename = path.basename.replace('.template', '');
     }))
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
     .pipe(replace(/<!TEMPLATE!>/g, `${timestamp}`))
     .pipe(replace(/<!BUILD!>/g, `${build}`))
-    .pipe(dest(folder))
+    .pipe(dest(`${folder}/dist`))
 }
 
 // Browsersync Tasks
