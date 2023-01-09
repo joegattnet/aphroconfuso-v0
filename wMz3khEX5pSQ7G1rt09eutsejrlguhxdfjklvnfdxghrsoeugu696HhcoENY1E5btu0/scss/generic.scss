@@ -4,7 +4,7 @@
     margin-top: $body-margin;
     .promo {
       header {
-        margin: 0;
+        margin: 0 0 ($body-margin / 2);
       }
       display: block;
       margin-bottom: $body-margin;

@@ -24,6 +24,7 @@
     top: -85px;
     transition: all 0.5s ease-out;
     width: 100%;
+    z-index: 1;
     .top-nav:hover {
       bottom: 0;
     }
@@ -133,9 +134,28 @@
       a {
         display: inline-block;
         padding: 1.5rem 0;
+        width: 100%;
       }
       &.hide-mobile {
         display: none;
+      }
+      &#text-size-adjust {
+        font-family: "Alegreya", serif;
+        a:nth-child(1) {
+          font-size: 1.1rem;
+        }
+        a:nth-child(2) {
+          font-size: 1.2rem;
+        }
+        a:nth-child(3) {
+          font-size: 1.3rem;
+        }
+        a:nth-child(4) {
+          font-size: 1.4rem;
+        }
+        a:nth-child(5) {
+          font-size: 1.5rem;
+        }
       }
     }
   }

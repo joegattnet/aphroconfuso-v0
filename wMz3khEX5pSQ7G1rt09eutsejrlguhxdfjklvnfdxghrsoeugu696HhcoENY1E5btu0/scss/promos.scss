@@ -15,7 +15,7 @@
 .promo-1,
 .promo-2 {
   header {
-    margin: 0;
+    margin: 0 0 ($body-margin / 2);
     h1,
     h2 {
       font-size: 2rem;
