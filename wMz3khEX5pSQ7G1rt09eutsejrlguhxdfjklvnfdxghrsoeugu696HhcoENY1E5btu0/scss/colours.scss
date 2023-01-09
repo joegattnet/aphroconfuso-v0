@@ -28,6 +28,18 @@ h5 {
   color: $h5-color;
 }
 
+// Make it this month
+.promo-2 {
+  background-color: lighten($mejju-2023, 25%);
+}
+
+.promo-1 {
+  &:before,
+  &:after {
+    color: complement($mejju-2023);
+  }
+}
+
 .mejju-2023 {
   @include monthly-colour($mejju-2023);
 }

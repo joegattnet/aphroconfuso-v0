@@ -23,7 +23,7 @@ function deleteDistFolder() {
 
 // Sass Task
 function scssTask() {
-  build = 4;
+  build = 6;
   timestamp = new Date().getTime();
   return src(`${folder}/scss/style.scss`, { sourcemaps: true })
     .pipe(sass())

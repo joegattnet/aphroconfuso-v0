@@ -22,24 +22,7 @@
     }
   }
   p {
-    color: $lighter-ink !important;
-  }
-}
-
-.promo {
-  &:hover {
-    h1:after {
-      color: lighten($reddish-pink, 40%);
-      content: "➛";
-      font-family: "Cinzel Decorative", cursive;
-      font-size: 5rem;
-      font-style: normal;
-      position: absolute;
-      right: 0;
-      top: 0;
-      z-index: -1;
-    }
-    position: relative;
+    color: $lighter-ink;
   }
 }
 
@@ -60,7 +43,7 @@
     font-weight: 500;
     position: absolute;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(0, -50%);
   }
   &:before {
     content: "{";
@@ -70,26 +53,32 @@
     content: "}";
     right: 0;
   }
-  color: $lighter-ink;
+  p {
+    font-family: "Fira Sans", sans;
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
   display: block;
-  font-family: "Alegreya Sans", sans-serif;
-  font-style: italic;
-  font-weight: 600;
   padding: 0 3rem;
   position: relative;
 }
 
 .promo-2 {
+  border-radius: 4px;
+  display: block;
+  font-style: italic;
+  padding: 1rem 3rem;
+  position: relative;
   &:before,
   &:after {
-    color: $light-brown;
+    color: $paper;
     font-family: "Cinzel Decorative", cursive;
     font-size: 5rem;
     font-style: normal;
     font-weight: 500;
     position: absolute;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(0, -50%);
   }
   &:before {
     content: "«";
@@ -99,10 +88,6 @@
     content: "»";
     right: 0;
   }
-  display: block;
-  font-style: italic;
-  padding: 0 3rem;
-  position: relative;
 }
 
 @media screen and (min-width: $mobile-breakpoint-plusone) {
