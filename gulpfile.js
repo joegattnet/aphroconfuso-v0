@@ -23,7 +23,7 @@ function deleteDistFolder() {
 
 // Sass Task
 function scssTask() {
-  build = 6;
+  build = 7;
   timestamp = new Date().getTime();
   return src(`${folder}/scss/style.scss`, { sourcemaps: true })
     .pipe(sass())
@@ -50,7 +50,7 @@ function replaceLinks() {
       prefix: '@@',
       basepath: '@file'
     }))
-    .pipe(replace(/<!TEMPLATE!>/g, `${timestamp}`))
+    .pipe(replace(/<!RANDOM!>/g, `${timestamp}`))
     .pipe(replace(/<!BUILD!>/g, `${build}`))
     .pipe(dest(`${folder}/dist`))
 }

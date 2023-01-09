@@ -54,9 +54,9 @@
     right: 0;
   }
   p {
-    font-family: "Fira Sans", sans;
+    font-family: "Sofia Sans Extra Condensed", sans;
     font-size: 1.4rem;
-    font-weight: 300;
+    font-weight: 400;
   }
   display: block;
   padding: 0 3rem;
@@ -66,7 +66,6 @@
 .promo-2 {
   border-radius: 4px;
   display: block;
-  font-style: italic;
   padding: 1rem 3rem;
   position: relative;
   &:before,
@@ -87,6 +86,41 @@
   &:after {
     content: "»";
     right: 0;
+  }
+}
+
+.promo-1.newsletter-subscribe {
+  ::placeholder {
+    color: #b5b5b5;
+    opacity: 1;
+  }
+  p {
+    color: $green;
+    font-family: "Vollkorn", serif;
+    font-style: italic;
+    font-size: 1.8rem;
+    text-transform: lowercase;
+    white-space: nowrap;
+  }
+  display: flex;
+  padding: 0 3rem;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  input {
+    border: 1px solid complement($green);
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+  }
+  input[type="email"] {
+    color: $green;
+  }
+  input[type="submit"] {
+    color: $paper;
+    background-color: complement($green);
+    font-family: "Alegreya Sans SC", sans-serif;
+    text-transform: lowercase;
   }
 }
 
