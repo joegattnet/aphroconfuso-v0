@@ -61,6 +61,11 @@ h5 {
   text-transform: uppercase;
 }
 
+.endnote {
+  font-style: italic;
+  margin-bottom: $body-line-height !important;
+}
+
 .outlined {
   text-shadow: -1px -1px 0 $paper, 0 -1px 0 $paper, 1px -1px 0 $paper,
     1px 0 0 $paper, 1px 1px 0 $paper, 0 1px 0 $paper, -1px 1px 0 $paper,

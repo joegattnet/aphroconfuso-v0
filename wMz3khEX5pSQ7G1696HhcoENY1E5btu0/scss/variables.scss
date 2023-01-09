@@ -20,14 +20,14 @@ $greyer-brown: hsl(30, 1%, 66%);
 
 $paper: hsl(60, 20%, 97%);
 $ink: hsl(0, 0%, 13%);
-$lighter-ink: hsl(0, 0%, 23%);
+$lighter-ink: hsl(0, 0%, 33%);
 $highlight: hsl(60, 57%, 74%);
 
 $saturation: 50%;
 $lightness: 45%;
 
 $faint-line: $faint-brown;
-$light-text: $light-brown;
+$light-text: $lighter-ink;
 
 $body-font-size: 1.2rem;
 $body-line-height: 1.4;
