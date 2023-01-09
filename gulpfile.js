@@ -10,7 +10,7 @@ const rename = require('gulp-rename');
 const replace = require('gulp-replace');
 var ssi = require('browsersync-ssi');
 
-var timestamp;
+var build, timestamp;
 
 const folder = 'wMz3khEX5pSQ7G1rt09eutsejrlguhxdfjklvnfdxghrsoeugu696HhcoENY1E5btu0';
 
@@ -21,13 +21,14 @@ function deleteDistFolder() {
 
 // Sass Task
 function scssTask() {
+  build = 1;
   timestamp = new Date().getTime();
   return src(`${folder}/scss/style.scss`, { sourcemaps: true })
     .pipe(sass())
     .pipe(postcss([cssnano()]))
-    // .pipe(rename(function (path) {
-    //         path.basename += `-${timestamp}`;
-    //     }))
+    .pipe(rename(function (path) {
+            path.basename += `-${build}`;
+        }))
     .pipe(dest('dist', { sourcemaps: '.' }));
 }
 
@@ -44,6 +45,7 @@ function replaceLinks() {
       path.basename = path.basename.replace('.template', '');
     }))
     .pipe(replace(/<!TEMPLATE!>/g, `${timestamp}`))
+    .pipe(replace(/<!BUILD!>/g, `${build}`))
     .pipe(dest(folder))
 }
 
