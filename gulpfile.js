@@ -12,7 +12,7 @@ var ssi = require('browsersync-ssi');
 
 var timestamp;
 
-const folder = 'wMz3khEX5pSQ7G1696HhcoENY1E5btu0';
+const folder = 'wMz3khEX5pSQ7G1rt09eutsejrlguhxdfjklvnfdxghrsoeugu696HhcoENY1E5btu0';
 
 // Delete dist folder
 function deleteDistFolder() {
