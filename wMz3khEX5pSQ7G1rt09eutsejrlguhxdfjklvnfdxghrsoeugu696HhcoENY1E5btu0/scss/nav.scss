@@ -136,9 +136,6 @@
         padding: 1.5rem 0;
         width: 100%;
       }
-      &.hide-mobile {
-        display: none;
-      }
       &#text-size-adjust {
         font-family: "Alegreya", serif;
         a:nth-child(1) {
@@ -200,9 +197,6 @@
       padding: 0.5rem 0;
       &:nth-child(5),
       &:last-child {
-        display: none;
-      }
-      &.hide-laptop {
         display: none;
       }
     }

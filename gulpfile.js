@@ -23,7 +23,7 @@ function deleteDistFolder() {
 
 // Sass Task
 function scssTask() {
-  build = 7;
+  build = 9;
   timestamp = new Date().getTime();
   return src(`${folder}/scss/style.scss`, { sourcemaps: true })
     .pipe(sass())
@@ -79,6 +79,7 @@ function browsersyncReload(cb){
 // Watch Task
 function watchTask() {
   watch(`${folder}/*.template.html`, replaceLinks, browsersyncReload);
+  watch(`${folder}/_*.html`, replaceLinks, browsersyncReload);
   watch([`${folder}/scss/**/*.scss`, `${folder}/js/**/*.js`], series(scssTask, jsTask, replaceLinks, browsersyncReload));
 }
 

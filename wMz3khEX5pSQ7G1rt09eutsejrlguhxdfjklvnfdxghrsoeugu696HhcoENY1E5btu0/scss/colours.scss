@@ -33,10 +33,12 @@ h5 {
   background-color: lighten($mejju-2023, 25%);
 }
 
-.promo-1 {
-  &:before,
-  &:after {
-    color: complement($mejju-2023);
+.newsletter-subscribe {
+  input[type="email"] {
+    &::placeholder {
+      color: lighten(complement($green), 25%);
+    }
+    color: $green;
   }
 }
 

@@ -36,7 +36,7 @@
 .promo-1 {
   &:before,
   &:after {
-    color: $magenta;
+    color: $light-brown;
     font-family: "Cinzel Decorative", cursive;
     font-size: 5rem;
     font-style: normal;
@@ -90,36 +90,37 @@
 }
 
 .promo-1.newsletter-subscribe {
-  ::placeholder {
-    color: #b5b5b5;
-    opacity: 1;
-  }
   p {
-    color: $green;
-    font-family: "Vollkorn", serif;
-    font-style: italic;
-    font-size: 1.8rem;
+    color: $light-brown;
+    font-family: "Alegreya Sans SC", serif;
+    margin-right: 0.5rem;
     text-transform: lowercase;
     white-space: nowrap;
   }
   display: flex;
-  padding: 0 3rem;
-  position: relative;
-  flex-direction: column;
+  align-content: center;
   align-items: center;
-  width: 100%;
+  flex-direction: row;
+  font-weight: 500;
+  justify-content: center;
+  letter-spacing: 1px;
+  padding: 0 3rem 0 2rem;
+  position: relative;
   input {
-    border: 1px solid complement($green);
+    border: 1px solid $light-brown;
     border-radius: 0.25rem;
     padding: 0.5rem;
   }
   input[type="email"] {
-    color: $green;
+    font-family: "Alegreya Sans", sans-serif;
+    letter-spacing: 0;
+    width: 16rem;
   }
   input[type="submit"] {
+    background-color: $light-brown;
     color: $paper;
-    background-color: complement($green);
     font-family: "Alegreya Sans SC", sans-serif;
+    padding: 0.5rem 1rem;
     text-transform: lowercase;
   }
 }

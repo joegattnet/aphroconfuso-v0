@@ -39,9 +39,17 @@ header {
   margin: $body-margin auto;
 }
 
+@media screen and (max-width: $mobile-breakpoint) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
 @media screen and (min-width: $mobile-breakpoint-plusone) {
   header {
     max-width: $max-content-width;
     margin: ($body-margin * 4) auto ($body-margin * 3);
+  }
+  .hide-laptop {
+    display: none !important;
   }
 }
